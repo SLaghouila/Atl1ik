@@ -48,22 +48,29 @@
 ?>
 
 <HTML>
-<a href="forside.php">[til forsiden]</a>
-	<CENTER>
-		<form id='login' action='login.php' method='post' accept-charset='UTF-8'>
-			<fieldset >
-				<legend>Login</legend>
-				<input type='hidden' name='submitted' id='submitted' value='1'/>
- 
-				<label for='username' >UserName*:</label>
-				<input type='text' name='username' id='username'  maxlength="50" />
- 
-				<label for='password' >Password*:</label>
-				<input type='password' name='password' id='password' maxlength="50" />
- 
-				<input type='submit' name='Submit' value='Submit' />
- 
-			</fieldset>
-		</form>
-	</CENTER>
+	<head>
+		<title>Login</title>
+	</head>
+	<body>
+		<a href="forside.php">[til forsiden]</a>
+		<CENTER>
+			<H1>Login</H1>
+			*P&aring;kr&aelig;vede felter
+			<form id='login' action='login.php' method='post' accept-charset='UTF-8'>
+				<fieldset >
+					<legend>Login</legend>
+					<input type='hidden' name='submitted' id='submitted' value='1'/>
+ 	
+					<label for='username' >UserName*:</label>
+					<input type='text' name='username' id='username'  maxlength="50" />
+ 	
+					<label for='password' >Password*:</label>
+					<input type='password' name='password' id='password' maxlength="50" />
+ 	
+					<input type='submit' name='Submit' value='Submit' />
+ 	
+				</fieldset>
+			</form>
+		</CENTER>
+	</body>
 </HTML>
