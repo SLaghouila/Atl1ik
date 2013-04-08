@@ -2,11 +2,9 @@
 
 ?>
 <HTML>
-<right>
 	<a 
 		href="loginpage.php">[Admin]
 	</a>	
-</right>
 <center>
 	<H1> Kommende St&aelig;vner </H1>
 
