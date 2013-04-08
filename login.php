@@ -32,9 +32,8 @@
 			return false;
 		}          
 		$username = $this->SanitizeForSQL($username);
-		$pwdmd5 = ($password);
 		$qry = "Select name, email from $this->tablename ".
-		" where username='$username' and password='$pwdmd5' ".
+		" where username='$username' and password='$password' ".
 		" and confirmcode='y'";
      
 		$result = mysql_query($qry,$this->connection);
@@ -49,6 +48,7 @@
 ?>
 
 <HTML>
+<a href="forside.php">[til forsiden]</a>
 	<CENTER>
 		<form id='login' action='login.php' method='post' accept-charset='UTF-8'>
 			<fieldset >
