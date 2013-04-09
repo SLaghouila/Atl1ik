@@ -1,3 +1,38 @@
+<?php
+	$username = 'atl1ik';
+	$password = '1234';
+	$host = 'localhost';
+
+  $con=mysqli_connect($host, $username, $password);
+
+  // Check connection
+  if (mysqli_connect_errno($con)) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  } else { 
+    echo "Connection was OK!\n";
+  }
+
+  // sql query for CREATE TABLE
+  $sql1 = "CREATE TABLE deltagerinfo` (
+						`idDeltagerInfo` int(11) not null auto_increment,
+						`fornavn` varchar(45),
+ 					  `efternavn` varchar(45),
+ 					  `klub` varchar(45),
+ 					  `aargang` int(11),
+ 					  `koen` varchar(45),
+  					PRIMARY KEY (`idDeltagerInfo`)
+					) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1";
+
+  $sql2 = "CREATE TABLE `deltagerinfoloeb` (
+  				 	`idDeltagerInfo` int(11) not null auto_increment,
+   					`rundeNavn` varchar(45),
+					  `distance` int(11),
+   					`tilmeldingstid` time,
+   					`aarsbedste` time,
+   					`PR` time,
+   					PRIMARY KEY (`idDeltagerInfo`)
+					) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=3";
+?>
 <html>
 
 <a 
@@ -38,7 +73,7 @@
 				</select>
 			</td>
 			<td>
-				<input type="checkbox" name="option1" value="ingen klub"> Ingen klub 
+				<input type="checkbox" name="ingenklub" value="yes"> Ingen klub 
 			</td>
 				<! Her er det vigtigt at man ikke kan vælge ingen klub og klub samtidig !>
 		</tr>
