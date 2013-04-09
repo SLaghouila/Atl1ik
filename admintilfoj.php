@@ -19,13 +19,13 @@
 		<tr>
 			<td>Fornavn
 			</td>
-			<td> <input type="text" name="field1-name">
+			<td> <input type="text" name="fornavn">
 			</td>
 		</tr>
 		<tr>
 			<td>Efternavn
 			</td>
-			<td> <input type="text" name="field2-name">
+			<td> <input type="text" name="efternavn">
 			</td>
 		</tr>
 		<tr>
@@ -74,7 +74,7 @@
 			<td>Tilmeldingstid 
 			</td>
 			<td>
-				<input type="text" name="field4-name"> 
+				<input type="text" name="tilmeldtid"> 
 			</td>
 			<td>
 				<input type="checkbox" name="option1" value="kvinde"> Ingen tilmeldingstid 
@@ -84,7 +84,7 @@
 			<td>&Aring;rsbedste 
 			</td>
 			<td>
-				<input type="text" name="field5-name"> 
+				<input type="text" name="aarstid"> 
 			</td>
 			<td>
 				<input type="checkbox" name="option1" value="kvinde"> Ingen  &aring;rsbedste 
@@ -94,7 +94,7 @@
 			<td>Personligrekord 
 			</td>
 			<td>
-				<input type="text" name="field6-name"> 
+				<input type="text" name="pr"> 
 			</td>
 			<td>
 				<input type="checkbox" name="option1" value="kvinde"> Ingen personligrekord 
