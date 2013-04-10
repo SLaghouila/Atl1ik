@@ -20,17 +20,17 @@
  					  `klub` varchar(45),
  					  `aargang` int(11),
  					  `koen` varchar(45),
+ 					  `rundeNavn` varchar(45),
   					PRIMARY KEY (`idDeltagerInfo`)
 					) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1";
 
   $sql2 = "CREATE TABLE `deltagerinfoloeb` (
   				 	`idDeltagerInfo` int(11) not null auto_increment,
-   					`rundeNavn` varchar(45),
 					  `distance` int(11),
    					`tilmeldingstid` time,
    					`aarsbedste` time,
    					`PR` time,
-   					PRIMARY KEY (`idDeltagerInfo`)
+   					PRIMARY KEY (`idDeltagerInfo`, `distance`)
 					) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=3";
 ?>
 <html>
